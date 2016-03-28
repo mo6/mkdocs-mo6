@@ -7,3 +7,10 @@
 {% endif %}
 
 {{ content }}
+
+{% if meta.showsitemap is defined %}
+<h2>Sitemap</h2>
+<ul>
+  {% include "sitemap.html" %}
+</ul>
+{% endif %}

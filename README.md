@@ -47,6 +47,7 @@ The following meta configurations are available, used to configure individual pa
 
 - `notoc`: if set it will disable the display of the TOC
 - `fullwidth`: if set the page content will fill the whole width of the browser (grid) view
+- `showsitemap`: if set it will include a sitemap below the content on the page
 
 ### Usage
 
@@ -55,6 +56,7 @@ An example of the use of the meta options in a specific page is:
 ```
 notoc: true
 fullwidth: true
+showsitemap: true
 
 <div class="jumbotron"><div class="container">
   <h1>Hello, world!</h1>

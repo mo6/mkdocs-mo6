@@ -1,0 +1,16 @@
+            {% for nav_item in nav %}
+            {% if nav_item.children %}
+                <li>
+                    {{ nav_item.title }}
+                    <ul>
+                    {% for nav_item in nav_item.children %}
+                        {% include "sitemap-sub.html" %}
+                    {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+                </li>
+            {% endif %}
+            {% endfor %}
