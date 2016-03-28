@@ -60,9 +60,12 @@
         </div>
 
         <footer class="col-md-12">
+            <hr>
             {% if copyright %}
-                <hr>
                 <center>{{ copyright }} &bull; Last update: {{ build_date_utc.strftime('%Y-%m-%d %H:%M') }}</center>
+            {% endif %}
+            {% if config.extra.mkdocs_footer is defined and config.extra.mkdocs_footer %}
+              <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
             {% endif %}
         </footer>
 
