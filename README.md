@@ -28,6 +28,7 @@ The following configuration options are available for the `mkdocs.yml` `extra` s
 
 - `min_toc_links: <num>` defines the minimum TOC links needed for the TOC to be displayed. With this option small pages with a few sections don't show a TOC.
 - `mkdocs_footer: <boolean>` switches the display of the standard MkDocs footer.
+- `build_date_footer: <boolean>` switches the display of the date of the last build.
 
 ### Usage
 
@@ -37,6 +38,7 @@ A example use of the options for `mkdocs.yml` is:
 extra:
     min_toc_links: 2
     mkdocs_footer: true
+    build_date_footer: true
 ```
 
 ## Extra page specific meta options

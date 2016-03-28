@@ -62,7 +62,11 @@
         <footer class="col-md-12">
             <hr>
             {% if copyright %}
-                <center>{{ copyright }} &bull; Last update: {{ build_date_utc.strftime('%Y-%m-%d %H:%M') }}</center>
+                <center>{{ copyright }}
+                {% if config.extra.build_date_footer is defined and config.extra.build_date_footer %}
+                  &bull; Last update: {{ build_date_utc.strftime('%Y-%m-%d %H:%M') }} UTC
+                {% endif %}
+                </center>
             {% endif %}
             {% if config.extra.mkdocs_footer is defined and config.extra.mkdocs_footer %}
               <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
