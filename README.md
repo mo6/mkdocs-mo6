@@ -67,3 +67,6 @@ fullwidth: true
 An paragraph of example text.
 ```
 
+## License
+
+Code released under the [MIT License](https://github.com/mo6/mkdocs-mo6/blob/master/LICENSE).
