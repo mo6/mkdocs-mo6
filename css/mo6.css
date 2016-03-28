@@ -1,0 +1,20 @@
+/**
+ * @file mo6.css
+ */
+
+/* Restyle page title */
+h1 {
+  font-weight: bold;
+}
+
+/* Add padding to bottom of page */
+footer {
+  padding-bottom: 20px;
+}
+
+/* Hide sub-navigation on small screens */
+@media screen and (max-width: 995px) {
+  .bs-sidebar {
+    display: none;
+  }
+}
