@@ -2,6 +2,12 @@
 
 A MkDocs theme, derived from the MkDocs [Bootswatch](https://bootswatch.com/) spacelab theme.
 
+## Usage
+
+To use this theme with your MkDocs project, download/clone in a subdirectory `mkdocs-mo6` and add the following to your `mkdocs.yml` file:
+
+	theme_dir: 'mkdocs-mo6'
+
 ## Modifications
 
 The following changes / additions are made compared to spacelab:
